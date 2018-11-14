@@ -14,6 +14,7 @@ List of apps and tools I use every day
 - Bracket Pair Colorizer
 - EditorConfig for VS Code
 - Prettier
+- GIthub pull requests
 - Git Blame
 - ESLint
 - TSLint
@@ -54,7 +55,8 @@ List of apps and tools I use every day
     "COMMIT_EDITMSG": "markdown"
   },
   "editor.formatOnSave": true,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "prettier.eslintIntegration": true
 }
 ```
 
@@ -113,6 +115,12 @@ core.editor=code --wait
 ### Merge tool
 
 I resolve conflicts manually in VSCode
+
+### Command line tools
+
+- fx – `npm i -g fx`
+- live-server - `npm i -g live-server`
+- ngrok
 
 ## MacOS apps
 

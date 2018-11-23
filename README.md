@@ -60,6 +60,11 @@ List of apps and tools I use every day
 }
 ```
 
+## Alfred workflows
+
+- [Github](https://github.com/gharlan/alfred-github-workflow)
+- [Custom workflows](https://github.com/lesnitsky/alfred-workflows)
+
 ## Terminal
 
 [iTerm2](https://www.iterm2.com/)

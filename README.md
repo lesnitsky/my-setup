@@ -1,45 +1,59 @@
 # My Setup
 
-List of apps and tools I use every day
+List of apps and tools I use often
 
-## Code editor/IDE
+## Praimary code editor
 
-[VSCode](https://code.visualstudio.com/)
+> occasionally I use XCode and Android Studio
 
-- Font: [FiraCode](https://github.com/tonsky/FiraCode)
-- Color theme: One Dark Pro Vivid
+- VSCode
+  - Font: [FiraCode](https://github.com/tonsky/FiraCode)
+  - Color theme: One Dark Pro
 
 ### VSCode extensions
 
-- Bracket Pair Colorizer
-- EditorConfig for VS Code
-- Prettier
-- GIthub pull requests
-- Git Blame
-- ESLint
-- TSLint
-- Sort lines
-- vscode-icons
-- vscode-styled-jsx
-- vscode-styled-components
-- React Native Tools
-- Shader languages support for VS Code
-- Terraform
-- Polacode
-- Dart
+- Apollo GraphQL
+- AWS Toolkit
 - Better TOML
+- Bracket Pair Colorizer
+- Dart
+- Dart
+- EditorConfig for VS Code
+- ESLint
+- Flutter
+- Git Blame
+- Go
+- Haskell
+- Haskell syntax highlighting
+- Kotlin Formatter
+- Kotlin Language
+- Polacode
+- Prettier
+- Pubspec Assist
+- React Native Tools
+- Rust
+- Serverless IDE
+- Shader languages support for VS Code
+- Sort lines
+- SQLite
+- Terraform
+- TSLint
+- vscode-icons
+- vscode-styled-components
+- vscode-styled-jsx
+- WakaTime
 
 ### VSCode user settings
 
 ```json
+// Place your settings in this file to overwrite the default settings
 {
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 14,
   "editor.renderWhitespace": "all",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "One Dark Pro Vivid",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "One Dark Pro",
   "window.zoomLevel": 0,
   "extensions.ignoreRecommendations": false,
   "editor.minimap.enabled": false,
@@ -50,20 +64,56 @@ List of apps and tools I use every day
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "breadcrumbs.enabled": true,
-  "typescript.tsc.autoDetect": "off",
   "files.associations": {
     "COMMIT_EDITMSG": "markdown"
   },
+  "git.autofetch": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "window.nativeTabs": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "go.useLanguageServer": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  "window.newWindowDimensions": "maximized",
+  "dart.debugExternalLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "haskell.formattingProvider": "stylish-haskell",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "sqltools.useNodeRuntime": true,
   "editor.formatOnSave": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "prettier.eslintIntegration": true
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "aws.profile": "profile:default"
 }
 ```
 
-## Alfred workflows
+## Design Tools
 
-- [Github](https://github.com/gharlan/alfred-github-workflow)
-- [Custom workflows](https://github.com/lesnitsky/alfred-workflows)
+- Sketch
 
 ## Terminal
 
@@ -88,6 +138,7 @@ alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Si
 alias rn="react-native"
 alias dk="docker-compose"
 alias gw="git commit --no-status"
+alias gsf="git submodule foreach"
 ```
 
 #### Theme
@@ -98,22 +149,30 @@ alias gw="git commit --no-status"
 
 ### GUI Tool
 
-[GitUp](https://gitup.co/) (use it in extremly rare cases)
+[GitUp](https://gitup.co/)
 
 ### Config
 
 ```
-alias.st=status -s
-alias.co=checkout
-alias.ci=commit
-alias.br=branch
-alias.cian=commit --amend --no-edit
-alias.ciann=commit --amend --no-edit --no-verify
-alias.cp=cherry-pick
-core.editor=code --wait
+[user]
+	name = Andrei Lesnitsky
+	email = andrei.lesnitsky@gmail.com
+[alias]
+	st = status -s
+	co = checkout
+	ci = commit
+	br = branch
+	cian = commit --amend --no-edit
+	cp = cherry-pick
+	ciann = commit --amend --no-edit --no-verify
+[core]
+	editor = code --wait
+[commit]
+	template = /Users/lesnitsky/.gitmessage
+	cleanup = default
 ```
 
-### Diff tool:
+### Diff tool
 
 [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
@@ -121,19 +180,11 @@ core.editor=code --wait
 
 I resolve conflicts manually in VSCode
 
-### Command line tools
-
-- fx – `npm i -g fx`
-- live-server - `npm i -g live-server`
-- ngrok
-
 ## MacOS apps
 
-- Alfred
 - Spotify
 - Slack
 - Telegram
-- Tweetbot
 - Evernote
 - 1Password
 - Gifski
@@ -144,3 +195,6 @@ I resolve conflicts manually in VSCode
 - Lightshot Screenshot
 - Spectacle
 - Lungo
+- ExpressVPN
+- Blender 2
+- CleanMyMac X
